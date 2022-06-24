@@ -1,57 +1,44 @@
-<?xml version="1.0" encoding="utf-8"?>
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
-  <xs:element name="data">
+  <xs:element name="zoos">
     <xs:complexType>
       <xs:sequence>
-        <xs:element maxOccurs="unbounded" name="element">
+        <xs:element name="zoo" maxOccurs="unbounded" minOccurs="0">
           <xs:complexType>
             <xs:sequence>
-              <xs:element name="animals">
-                <xs:complexType>
-                  <xs:sequence>
-                    <xs:element maxOccurs="unbounded" name="element">
-                      <xs:complexType>
-                        <xs:sequence>
-                          <xs:element name="commonName" type="xs:string" />
-                          <xs:element name="dob" type="xs:date" />
-                          <xs:element name="giveName" type="xs:string" />
-                          <xs:element name="scientificName" type="xs:string" />
-                          <xs:element name="sex" type="xs:string" />
-                        </xs:sequence>
-                      </xs:complexType>
-                    </xs:element>
-                  </xs:sequence>
-                </xs:complexType>
-              </xs:element>
-              <xs:element name="closeTime" type="xs:string" />
-              <xs:element name="employees">
-                <xs:complexType>
-                  <xs:sequence>
-                    <xs:element maxOccurs="unbounded" name="element">
-                      <xs:complexType>
-                        <xs:sequence>
-                          <xs:element name="dob" type="xs:date" />
-                          <xs:element name="firstName" type="xs:string" />
-                          <xs:element name="id" type="xs:string" />
-                          <xs:element name="lastName" type="xs:string" />
-                          <xs:element name="position" type="xs:string" />
-                        </xs:sequence>
-                      </xs:complexType>
-                    </xs:element>
-                  </xs:sequence>
-                </xs:complexType>
-              </xs:element>
-              <xs:element name="id" type="xs:string" />
+              <xs:element type="xs:string" name="id"/>
+              <xs:element type="xs:string" name="openTime"/>
+              <xs:element type="xs:string" name="closeTime"/>
               <xs:element name="location">
                 <xs:complexType>
                   <xs:sequence>
-                    <xs:element name="city" type="xs:string" />
-                    <xs:element name="counry" type="xs:string" />
-                    <xs:element name="region" type="xs:string" />
+                    <xs:element type="xs:string" name="city"/>
+                    <xs:element type="xs:string" name="region"/>
+                    <xs:element type="xs:string" name="counry"/>
                   </xs:sequence>
                 </xs:complexType>
               </xs:element>
-              <xs:element name="openTime" type="xs:string" />
+              <xs:element name="animals" maxOccurs="unbounded" minOccurs="0">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element type="xs:string" name="giveName"/>
+                    <xs:element type="xs:string" name="commonName"/>
+                    <xs:element type="xs:string" name="scientificName"/>
+                    <xs:element type="xs:date" name="dob"/>
+                    <xs:element type="xs:string" name="sex"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="employees" maxOccurs="unbounded" minOccurs="0">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element type="xs:string" name="id"/>
+                    <xs:element type="xs:string" name="firstName"/>
+                    <xs:element type="xs:string" name="lastName"/>
+                    <xs:element type="xs:date" name="dob"/>
+                    <xs:element type="xs:string" name="position"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
             </xs:sequence>
           </xs:complexType>
         </xs:element>

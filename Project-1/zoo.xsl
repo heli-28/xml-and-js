@@ -33,7 +33,7 @@
                 <td>Region</td>
                 
             </tr>
-            <xsl:for-each select="data/element"> 
+            <xsl:for-each select="zoos/zoo"> 
             <tr>
                 <td>             
                     <xsl:value-of select="id"/>
@@ -45,7 +45,7 @@
                     <xsl:value-of select="closeTime"/>
                 </td>
                 <td>
-                    <xsl:for-each select="animals/element">
+                    <xsl:for-each select="animals">
                     <ul>
                         <li>
                         <xsl:value-of select="commonName"/>
@@ -54,7 +54,7 @@
                     </xsl:for-each>
                 </td> 
                 <td>
-                    <xsl:for-each select="animals/element">
+                    <xsl:for-each select="animals">
                     <ul>
                         <li>
                         <xsl:value-of select="dob"/>
@@ -63,7 +63,7 @@
                     </xsl:for-each>
                 </td> 
                 <td>
-                    <xsl:for-each select="animals/element">
+                    <xsl:for-each select="animals">
                     <ul>
                         <li>
                         <xsl:value-of select="giveName"/>
@@ -72,7 +72,7 @@
                     </xsl:for-each>
                 </td> 
                 <td>
-                    <xsl:for-each select="animals/element">
+                    <xsl:for-each select="animals">
                     <ul>
                         <li>
                         <xsl:value-of select="scientificName"/>
@@ -81,7 +81,7 @@
                     </xsl:for-each>
                 </td> 
                 <td>
-                    <xsl:for-each select="animals/element">
+                    <xsl:for-each select="animals">
                     <ul>
                         <li>
                         <xsl:value-of select="sex"/>
@@ -90,7 +90,7 @@
                     </xsl:for-each>
                 </td> 
                 <td>
-                    <xsl:for-each select="employees/element">
+                    <xsl:for-each select="employees">
                     <ul>
                         <li>
                         <xsl:value-of select="id"/>
@@ -99,7 +99,7 @@
                     </xsl:for-each>
                 </td>
                 <td>
-                    <xsl:for-each select="employees/element">
+                    <xsl:for-each select="employees">
                     <ul>
                         <li>
                         <xsl:value-of select="firstName"/>
@@ -108,7 +108,7 @@
                     </xsl:for-each>                   
                 </td>
                 <td>
-                    <xsl:for-each select="employees/element">
+                    <xsl:for-each select="employees">
                     <ul>
                         <li>
                         <xsl:value-of select="lastName"/>
@@ -117,7 +117,7 @@
                     </xsl:for-each>
                 </td>
                 <td> 
-                    <xsl:for-each select="employees/element">                    
+                    <xsl:for-each select="employees">                    
                     <ul>
                         <li>
                         <xsl:value-of select="dob"/>
@@ -126,7 +126,7 @@
                     </xsl:for-each>
                 </td>
                 <td>
-                    <xsl:for-each select="employees/element">
+                    <xsl:for-each select="employees">
                     <ul>
                         <li>
                         <xsl:value-of select="position"/>
@@ -134,15 +134,14 @@
                     </ul>
                     </xsl:for-each>
                 </td>
-                
-                <td>  
+                  <td>  
                     <xsl:for-each select="location">           
                     <xsl:value-of select="city"/>
                     </xsl:for-each>
                 </td>
                 <td>  
                     <xsl:for-each select="location">           
-                    <xsl:value-of select="country"/>
+                    <xsl:value-of select="counry"/>
                     </xsl:for-each>
                 </td>
                 <td>  
@@ -150,8 +149,6 @@
                     <xsl:value-of select="region"/>
                     </xsl:for-each>
                 </td>
-                
-
 			</tr>
             </xsl:for-each>
         </table> 
