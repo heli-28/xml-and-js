@@ -12,7 +12,6 @@
             <th colspan="5">ANIMALS</th>  
             <th colspan="5">EMPLOYEES</th> 
             <th colspan="3">LOCATION</th>
-             
           </tr>          
             <tr style="color:red;text-align:center">
                 <td>Element ID</td>
@@ -31,7 +30,6 @@
                 <td>City</td>
                 <td>Country</td>
                 <td>Region</td>
-                
             </tr>
             <xsl:for-each select="zoos/zoo"> 
             <tr>

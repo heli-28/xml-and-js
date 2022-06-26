@@ -1,28 +1,32 @@
 <?xml version="1.0" encoding="UTF-8" ?>
+<!-- linking xsl file to be formatted in tabular format -->
 <?xml-stylesheet type="text/xsl" href="./zoo.xsl"?>
+
+<!-- DTD -->
+<!DOCTYPE zoos 
 <!DOCTYPE zoos 
 [
     <!ELEMENT zoos (zoo+)>    
     <!ELEMENT zoo (id,openTime,closeTime,location,animals+,employees+)>
     <!ELEMENT id (#PCDATA)>
-    <!ELEMENT openTime(#PCDATA)>
-     <!ELEMENT closeTime(#PCDATA)>
-     <!ELEMENT location(city,country,region)>
-        <!ELEMENT city(#PCDATA)>
-        <!ELEMENT counry(#PCDATA)>
-        <!ELEMENT region(#PCDATA)>    
-    <!ELEMENT animals (commonName,dob,giveName,scientificName,sex)>
-        <!ELEMENT commonName(#PCDATA)>
-        <!ELEMENT dob(#PCDATA)>
-        <!ELEMENT giveName(#PCDATA)>
-        <!ELEMENT scientificName(#PCDATA)>
-        <!ELEMENT sex(#PCDATA)>
-    <!ELEMENT employees (dob,firstName,id,lastName,position)>
-        <!ELEMENT dob(#PCDATA)>
-        <!ELEMENT firstName(#PCDATA)>
-        <!ELEMENT id(#PCDATA)>
-        <!ELEMENT lastName(#PCDATA)>
-        <!ELEMENT position(#PCDATA)>   
+    <!ELEMENT openTime (#PCDATA)>
+     <!ELEMENT closeTime (#PCDATA)>
+     <!ELEMENT location (city,region,counry)>
+        <!ELEMENT city (#PCDATA)>
+        <!ELEMENT counry (#PCDATA)>
+        <!ELEMENT region (#PCDATA)>    
+    <!ELEMENT animals (giveName,commonName,scientificName,dob,sex)>
+        <!ELEMENT commonName (#PCDATA)>
+        <!ELEMENT dob (#PCDATA)>
+        <!ELEMENT giveName (#PCDATA)>
+        <!ELEMENT scientificName (#PCDATA)>
+        <!ELEMENT sex (#PCDATA)>
+    <!ELEMENT employees (id,firstName,lastName,dob,position)>
+        <!ELEMENT dob (#PCDATA)>
+        <!ELEMENT firstName (#PCDATA)>
+        <!ELEMENT id (#PCDATA)>
+        <!ELEMENT lastName (#PCDATA)>
+        <!ELEMENT position (#PCDATA)>   
 ]> 
 <zoos>
     <zoo>
