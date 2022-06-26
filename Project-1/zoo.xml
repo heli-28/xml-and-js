@@ -4,7 +4,7 @@
 
 <!-- DTD -->
 <!DOCTYPE zoos 
-<!DOCTYPE zoos 
+<!DOCTYPE zoos
 [
     <!ELEMENT zoos (zoo+)>    
     <!ELEMENT zoo (id,openTime,closeTime,location,animals+,employees+)>

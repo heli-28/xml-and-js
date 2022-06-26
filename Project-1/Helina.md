@@ -30,7 +30,7 @@ Whereas <xsl:value-of> element is also used to extract the value of an XML eleme
 Also, used unordered listing (ul),(li) so that we can have a better picture of data in that particular row.
 
 At the end closing all the tags.
-![image info](../assets/xslt_table_format.png)
+![image info](../assets/xslt_tablular.png)
 
 <!-- zoo.html  -->
 For html file used tags such as html, head,body,table,script(to write the script for the action to be performed to load the data dynamically).
@@ -42,6 +42,7 @@ The onreadystatechange event is triggered four times, one time for each change i
 
 open() initializes a newly-created request such as for here it opens zoo.xml.
 
+
 Took the response from xml and added it the xml doc.
 
 If you want to return the text of an element, text is always inside a Text node, and you will have to return the Text node's node value (element.childNodes[0].nodeValue).
@@ -51,4 +52,4 @@ Adding the Id of the table using innerhtml as it return the html content of an e
 
 Closing all the tags.
 
-![image info](../assets/html_load.png)
+![image info](../assets/html_loader.png)
