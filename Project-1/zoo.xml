@@ -3,7 +3,7 @@
 <?xml-stylesheet type="text/xsl" href="./zoo.xsl"?>
 
 <!-- DTD -->
-<!DOCTYPE zoos 
+<!-- <!DOCTYPE zoos 
 <!DOCTYPE zoos
 [
     <!ELEMENT zoos (zoo+)>    
@@ -27,7 +27,7 @@
         <!ELEMENT id (#PCDATA)>
         <!ELEMENT lastName (#PCDATA)>
         <!ELEMENT position (#PCDATA)>   
-]> 
+]>  -->
 <zoos>
     <zoo>
         <id>5c96afec-320a-47df-b819-fee84075cf9e</id>
